@@ -137,6 +137,7 @@
 
   .final { text-align: center; }
   .final p { color: var(--muted); margin: 12px auto 28px; max-width: 32em; }
+  .final .gigs { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
 
   footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--muted); font-size: .9rem; }
   footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 24px; justify-content: space-between; }
@@ -149,8 +150,7 @@
 <header>
   <div class="wrap">
     <a class="brand" href="#">Raikus<span>.</span></a>
-    <!-- TODO: link al gig Fiverr appena pubblicato -->
-    <a class="btn small" href="https://www.fiverr.com/fede_sanga">Get a quote</a>
+    <a class="btn small" href="#quote">Get a quote</a>
   </div>
 </header>
 
@@ -163,7 +163,7 @@
         <h1>Your trading idea, coded and tested.</h1>
         <p class="lead">I turn your rules into a TradingView indicator or an MT5 Expert Advisor. No repaint, tested on data it has never seen, and the source code is yours.</p>
         <div class="actions">
-          <a class="btn" href="https://www.fiverr.com/fede_sanga">Get a quote</a>
+          <a class="btn" href="#quote">Get a quote</a>
           <a class="link" href="#work">See my work ↓</a>
         </div>
         <div class="trust"><ul>
@@ -277,11 +277,14 @@
     </div>
   </section>
 
-  <section class="final">
+  <section class="final" id="quote">
     <div class="wrap">
       <h2>Have a trading idea?</h2>
       <p>Send it over. You get a free quote and an honest opinion on what can be coded.</p>
-      <a class="btn" href="https://www.fiverr.com/fede_sanga">Get a quote</a>
+      <div class="gigs">
+        <a class="btn" href="https://www.fiverr.com/fede_sanga/code-your-tradingview-pine-script-indicator-or-strategy-from-your-idea">TradingView (Pine Script)</a>
+        <a class="btn" href="https://www.fiverr.com/fede_sanga/turn-your-trading-idea-into-an-mt5-expert-advisor-or-indicator-in-mql5">MetaTrader 5 (MQL5)</a>
+      </div>
     </div>
   </section>
 
